@@ -1,3 +1,4 @@
+//CLASS HOMEWORK IS TITLED ClassExamples.JS, .TS, AND INDEX.HTML
 function sayHello(person: string): string {
   return "Hello, " + person;
 }
