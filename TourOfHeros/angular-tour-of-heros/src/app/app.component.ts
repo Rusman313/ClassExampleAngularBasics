@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import{Observable, Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import{Observable, Subscription} from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ClassExamples';
+  title = 'Tour of Heros';
 }

@@ -1,1 +1,8 @@
-<p>comp-two works!</p>
+<h3> Component 2 works</h3>
+
+<ul *ngFor="let person of dataList" >
+    <li>Name: {{person.getFullName()}}</li>
+    
+</ul>
+
+<router-outlet name="comp-two"></router-outlet>
