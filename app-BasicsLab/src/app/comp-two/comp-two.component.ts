@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Person} from '../person';
 import { PersonService } from '../person.service';
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-comp-two',
