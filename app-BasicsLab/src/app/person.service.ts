@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import{Observable, of, Subscriber} from 'rxjs';
+import{Observable, of} from 'rxjs';
 import {Person} from './person';
 
 @Injectable({
@@ -11,13 +11,12 @@ export class PersonService {
     new Person("Salina","Chona"),
     new Person("Aahana", "Chona")
   ];
-  Observable: (value: Person, index: number, array: Person[]) => value is Person;
-constructor(){}
-getPersona():Observable<T>{
-  return new Observable(Subscriber => { this.delay(3000).then(() => Subscriber.next(this.typeOfPersonArr.filter((this.Observable),{ "Name: " + this.getFullName()})))})
-}
-  delay(arg0: number) {
-    throw new Error("Method not implemented.");
+  constructor(){
+  }
+  getPerson(): Observable<Person[]>{
+    return of(this.typeOfPersonArr.filter((person) =>{
+      return ("Name: " + person.getFullName());
+    }))
   }
   /*getPerson():void{
     this.typeOfPersonArr.filter((person) => {Subscriber.name
